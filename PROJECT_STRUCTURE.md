@@ -1,7 +1,6 @@
 ## Project Structure ✨
 
 <!-- START_STRUCTURE -->
-
 ```
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
@@ -10,12 +9,14 @@
 │   ├── 212284100-561aa473-3905-4a80-b561-0d28506553ee.gif
 │   ├── 329829127-e79eb6de-81b1-4ffb-b6ed-f018bb977e88.png
 │   ├── Image
+│   ├── glassy logo.jpeg
 │   └── hacktober.png
 ├── PROJECT_STRUCTURE.md
 ├── README.md
 ├── docker-compose.yml
 ├── eslint.config.mjs
 ├── git
+├── glassy logo.jpeg
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.js
@@ -25,11 +26,31 @@
 │   ├── manifest.json
 │   └── robots.txt
 ├── repo_structure.txt
+├── server/
+│   ├── app.js
+│   ├── controllers/
+│   │   ├── contactController.js
+│   │   ├── newsletterController.js
+│   │   └── postsController.js
+│   ├── model/
+│   │   ├── Newsletter.js
+│   │   ├── contact.js
+│   │   └── postModel.js
+│   ├── package.json
+│   ├── routes/
+│   │   ├── contactRoutes.js
+│   │   ├── newsletterRoute.js
+│   │   └── storiesRoutes.js
+│   ├── sendSuscribedMail.js
+│   └── utils/
+│       ├── db.js
+│       └── sendMail.js
 ├── src/
 │   ├── App.css
 │   ├── App.test.tsx
 │   ├── App.tsx
 │   ├── components/
+│   │   ├── AIChatbot.tsx
 │   │   ├── AboutUsPage.tsx
 │   │   ├── Accordion.tsx
 │   │   ├── AccordionDetails.tsx
@@ -41,6 +62,7 @@
 │   │   ├── CardDetailsPage.tsx
 │   │   ├── Checkbox.tsx
 │   │   ├── CheckboxDetails.tsx
+│   │   ├── ContactUs.tsx
 │   │   ├── ContactUsDetailsPage.tsx
 │   │   ├── ContributorsPage.tsx
 │   │   ├── DonationPage.tsx
@@ -68,9 +90,10 @@
 │   │   ├── SpeedDialDetailsPage.tsx
 │   │   ├── SpinnerDetailsPage.tsx
 │   │   ├── StatisticDetails.tsx
+│   │   ├── Stories.tsx
+│   │   ├── TermsOfUse.tsx
 │   │   ├── TestimonialDetails.tsx
 │   │   ├── TextareaDetailPage.tsx
-│   │   ├── ThemeTogggle.tsx
 │   │   ├── Toast.tsx
 │   │   ├── ToastGenerator.tsx
 │   │   ├── ToastPage.tsx
@@ -79,6 +102,16 @@
 │   │   └── badge.tsx
 │   ├── index.css
 │   ├── index.tsx
+│   ├── login/
+│   │   ├── SignIn.tsx
+│   │   ├── SignUp.tsx
+│   │   ├── UserAccount.tsx
+│   │   ├── contexts/
+│   │   │   └── authContext/
+│   │   │       └── index.tsx
+│   │   └── firebase/
+│   │       ├── auth.js
+│   │       └── firebase.js
 │   ├── logo.svg
 │   ├── react-app-env.d.ts
 │   ├── reportWebVitals.ts
@@ -87,5 +120,4 @@
 ├── tailwind.config.js
 └── tsconfig.json
 ```
-
 <!-- END_STRUCTURE -->
